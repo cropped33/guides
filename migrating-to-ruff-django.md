@@ -17,7 +17,7 @@
    exclude = ["./backend/**/migrations/"]
 
    [tool.ruff.lint]
-   extend-select = ["I"]
+   select = ["I"]
    ```
 
 1. Rename `venv` to `.venv` in Dockerfile.
@@ -35,4 +35,5 @@
        - id: ruff-format
    ```
 
+1. Run `pre-commit autoupdate` to make sure that all repos in pre-commit is up-to-date.
 1. Run `pre-commit run --all-files`, `ruff` will fail the first time and pass the second time.
