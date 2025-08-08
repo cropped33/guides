@@ -17,7 +17,7 @@
    exclude = ["./backend/**/migrations/"]
 
    [tool.ruff.lint]
-   select = ["I"]
+   select = ["I", "F"] # isort and Pyflakes
    ```
 
 1. Rename `venv` to `.venv` in Dockerfile.
